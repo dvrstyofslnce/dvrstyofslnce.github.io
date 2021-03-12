@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="assets/theme/css/style.css" />
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css" />
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css" />
+
+    <!-- AOS.JS -->
+    <link href="assets/aos-master/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- START - NAVBAR -->
@@ -59,20 +62,20 @@
         <div class="row justify-content-center">
           <div class="col-12 col-lg-10">
             <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>I am</strong><br /><strong>Alif Maulidanar</strong></h1>
-            <h2 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5">Student | Web Developer</h2>
+            <h2 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><span id="typed"></span></h2>
           </div>
         </div>
       </div>
     </section>
-    <!-- END - NAVBAR -->
+    <!-- END - HEADER -->
 
     <!-- START - ABOUT ME -->
     <section class="content1 cid-s48vrXhP0J mbr-fullscreen" id="content1-d">
       <div class="container">
         <div class="row justify-content-center">
           <div class="title col-12 col-md-9">
-            <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>About Me</strong></h3>
-            <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2" data-aos="fade-down-right"><strong>About Me</strong></h3>
+            <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7" data-aos="fade-up-left">
               Click on the <strong>Publish </strong>button at the top right corner and select a needed publishing option. Use the Mobirise publish option to publish your test site on our servers. You can publish your site locally if you
               don't want to publish it online yet.
             </h4>
@@ -88,11 +91,11 @@
 
       <div class="container">
         <div class="mbr-section-head">
-          <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+          <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2" data-aos="fade-down">
             <strong>Contacts</strong>
           </h3>
         </div>
-        <div class="row justify-content-center mt-4">
+        <div class="row justify-content-center mt-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
           <div class="card col-12 col-md-6">
             <div class="card-wrapper">
               <div class="image-wrapper">
@@ -145,11 +148,11 @@
     <section class="form6 cid-srlQcpYoxg" id="form6-q">
       <div class="container">
         <div class="mbr-section-head">
-          <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+          <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2" data-aos="fade-down">
             <strong>Get in Touch</strong>
           </h3>
         </div>
-        <div class="row justify-content-center mt-4">
+        <div class="row justify-content-center mt-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
           <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
             <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler mx-auto" data-form-title="Form Name">
               <input type="hidden" name="email" data-form-email="true" value="Wz/r0TGn+IpC8mBJMLpvB8Gxim+NjTMuN5jwerAc42aYltnIKB98LEOhzs3sySGUuZ/OL5zGF1g1+Gt3AIXX2UIhfwbqPxv3VnWuWosH+hHa8UR5xVmvAlMlrSFndxiu" />
@@ -224,5 +227,41 @@
     <script src="assets/theme/js/script.js"></script>
     <script src="assets/formoid/formoid.min.js"></script>
     <!-- QUERY -->
+
+    <!-- TYPED.JS -->
+    <script src="assets/typed.js-master/lib/typed.min.js"></script>
+    <script>
+      var typed = new Typed('#typed', {
+        strings: ['Student', 'Web Developer'],
+        typeSpeed: 50,
+        delaySpeed: 90,
+        loop: true,
+      });
+    </script>
+
+    <!-- AOS.JS -->
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
   </body>
 </html>
