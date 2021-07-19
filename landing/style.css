@@ -186,6 +186,9 @@ section {
 /* FOOTER */
 footer {
   background-color: rgb(31, 31, 31);
+  padding-top: 10px;
+  padding-bottom: 38px;
+  margin-top: 48px;
 }
 
 .footer {
@@ -296,7 +299,7 @@ footer .subscribe:hover:after {
     margin-bottom: -8px;
   }
 
-  /* button order */
+  /* order submit button */
   /* GENERAL BUTTON STYLING */
   .order .submit,
   .order .submit::after {
@@ -346,6 +349,12 @@ footer .subscribe:hover:after {
   }
 
   /* FOOTER */
+  footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-top: 48px;
+  }
+
   .footer {
     font-size: 0.8rem;
   }
