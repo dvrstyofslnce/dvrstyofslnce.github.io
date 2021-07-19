@@ -189,13 +189,67 @@ footer {
 }
 
 .footer {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
-footer h4 {
-  font-size: 1.5rem;
+footer .kolom-atas h4 {
+  font-size: 0.8rem;
   font-weight: 600;
 }
+
+footer .kolom-bawah {
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+
+/* footer email field */
+footer .email-field {
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+
+/* footer subscribe button */
+footer .subscribe {
+  border-radius: 4px;
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  /* text-align: center; */
+  font-size: 0.5rem;
+  padding: 5px;
+  width: 70px;
+  transition: all 0.5s;
+  cursor: pointer;
+  /* margin: 36px; */
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+footer .subscribe {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+footer .subscribe:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 5px;
+  right: -5px;
+  transition: 0.5s;
+}
+
+footer .subscribe:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+footer .subscribe:hover:after {
+  opacity: 1;
+  right: 25px;
+}
+
 /* FOOTER */
 
 /* .section-1 {
@@ -291,7 +345,28 @@ footer h4 {
     width: 100%;
   }
 
-  /* button footer */
+  /* FOOTER */
+  .footer {
+    font-size: 0.8rem;
+  }
+
+  footer .kolom-atas h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  footer .kolom-bawah {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  /* footer email field */
+  footer .email-field {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  /* footer subscribe button */
   footer .subscribe {
     border-radius: 4px;
     background-color: #28a745;
