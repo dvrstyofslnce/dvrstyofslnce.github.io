@@ -69,6 +69,14 @@ section {
   border-radius: 40px;
 }
 
+header .tombol-A {
+  display: none;
+}
+
+header .tombol-B {
+  display: inline-block;
+}
+
 /* ABOUT */
 .about {
   /* padding-top: 10px; */
@@ -192,7 +200,7 @@ footer {
 }
 
 .footer {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 
 footer .kolom-atas h4 {
@@ -227,7 +235,7 @@ footer .subscribe {
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
 
-footer .subscribe {
+/* footer .subscribe {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -251,7 +259,7 @@ footer .subscribe:hover {
 footer .subscribe:hover:after {
   opacity: 1;
   right: 25px;
-}
+} */
 
 /* FOOTER */
 
@@ -297,6 +305,15 @@ footer .subscribe:hover:after {
     margin: auto;
     padding-bottom: 5px;
     margin-bottom: -8px;
+  }
+
+  /* order now button */
+  header .tombol-A {
+    display: inline-block;
+  }
+
+  header .tombol-B {
+    display: none;
   }
 
   /* order submit button */
